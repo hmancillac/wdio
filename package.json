@@ -1,14 +1,18 @@
 {
-  "name": "webdriverio-test",
+  "name": "ejemplo_webDriverIO",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Ejemplo básico de WebDriverIO, a partir de una búsqueda en google",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hmancillac/wdio.git"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test-example": "env=qa wdio"
+    "google": "./node_modelues/.bin/wdio wdio.conf.js --suite google",
+    "google_pop": "./node_modelues/.bin/wdio wdio.conf.js --suite google_pop"
   },
   "keywords": [],
-  "author": "luis carrasco <carrascogalindo.felipe@gmail.com>",
+  "author": "Héctor",
   "license": "MIT",
   "devDependencies": {
     "@wdio/cli": "^5.11.13",
@@ -17,5 +21,8 @@
     "@wdio/mocha-framework": "^5.11.0",
     "@wdio/selenium-standalone-service": "^5.11.2",
     "@wdio/sync": "^5.11.13"
+  },
+  "dependencies": {
+    "webdriverio": "^6.10.2"
   }
 }

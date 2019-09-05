@@ -1,8 +1,16 @@
 exports.config = {
     runner: 'local',
     specs: [
-        './test/specs/**/*.js'
+        './src/pop/google/*'
     ],
+    suite:{
+        google_pop:[
+            '/src/pop/google/PageTest.js'
+        ]
+    }
+    
+    
+    
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
